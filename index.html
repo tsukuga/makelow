@@ -31,15 +31,18 @@
               class1_min:6,class1_max:6,remove:"-",restriction:[["-"],["-"]],},
             ],
       };
-    const keys = Object.keys(Lists);
-    console.log(keys);
+    const Keys = Object.keys(Lists);
+    console.log(Keys);
   
    class Main extends React.Component{
      render(){ 
-       return(
-        <MakeLists value= "1" text="国際"/>
-       )
-     }
+       
+       {keys.map((e)=>{
+         return(
+          <MakeLists value = {e} text = {e}/>
+         ) 
+       })}
+      
    }
 
    class MakeLists extends React.Component{
