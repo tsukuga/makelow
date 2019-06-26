@@ -39,19 +39,11 @@
        
        {Keys.map((e)=>{
          return(
-          <MakeLists value = {e} text = {e}/>
+         <option value={value}>
+           {e}</option>
          ) 
        })}}
       
-   }
-
-   class MakeLists extends React.Component{
-     render(){
-       return(
-         <option value={this.props.value}>
-           {this.props.text}</option>
-       )
-     }
    }
     
     ReactDOM.render(<Main/>, document.getElementById('list'));
