@@ -354,8 +354,8 @@
         };
      
        return({
-       Lists.map((e)=>{
-       <MakeLists value = {value} text = {e.key}/>
+       Object.keys(Lists).map((e)=>{
+       <MakeLists value = {value} text = {e}/>
        })}
        
 
