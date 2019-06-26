@@ -18,7 +18,7 @@
   <script type="text/babel">
 
    class Main extends React.Component{
-     render(){
+
      const Lists = {
           '国際総合学類/国際開発学/2015':[
 
@@ -353,9 +353,10 @@
                 ],
         };
         
+     render(){
         Make_Low(){
-         row = Object.keys(Lists).foreach((e)=>
-        <MakeLists value = {value} text = {e}/>
+         row = Object.keys(Lists).foreach((e)=>{
+        <MakeLists value = {value} text = {e}/>}
         )}
         
      
