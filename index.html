@@ -352,11 +352,16 @@
                 class1_min:0,class1_max:23,remove:"-",restriction:[["-"],["-"]],},
                 ],
         };
+        
+        Make_Low(){
+         row = Object.keys(Lists).foreach((e)=>
+        <MakeLists value = {value} text = {e}/>
+        )}
+        
      
-       return({
-       Object.keys(Lists).foreach((e)=>{
-       <MakeLists value = {value} text = {e}/>
-       })}
+       return(
+        {row}
+       )
        
 
        )
