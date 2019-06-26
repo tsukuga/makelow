@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   </head>
   <body>
+    
     <select class="form-control"id="list">
     </select>
 
@@ -16,9 +17,12 @@
    class Main extends React.Component{
      render(){
        return(
+       <React.Fragment>
        <option value="1">国際</option>
        <option value="2">社会</option>
        <option value="3">生物</option>
+      </React.Fragment>
+       
        )
      }
    }
