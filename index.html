@@ -37,9 +37,9 @@
    class Main extends React.Component{
      render(){ 
        return(
-       {Keys.map((e)=>{
+       {Keys.map((e,index)=>{
          return(
-         <option value={e}>
+         <option value={index}>
            {e}</option>
          ) 
        }
