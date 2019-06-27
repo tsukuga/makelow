@@ -39,12 +39,21 @@
      return(
       <React.Fragment>
       {Keys.map((e,index) => (
-      <option value={index}>{e}</option>
+        <MakeList value ={index} text ={e}/>
       ))}
       </React.Fragment>
      )
     }
    }
+   
+   class MakeList extends React.Component{
+    render(){
+     return(
+       <option value={this.props.value}>{this.props.e}</option>
+      )
+    }
+   }
+   
     ReactDOM.render(<Main/>, document.getElementById('list'));
   </script>
   </body>
