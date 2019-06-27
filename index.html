@@ -37,17 +37,16 @@
    class Main extends React.Component{
      render(){ 
        return(
-       {Keys.map((e,index)=>{
+       {Keys.map((e,index)=>
          <option value={index}>
            {e}</option>
          ) 
         }
-       }
-      )
+       )
+      }
      }
-    )
-   }    
-  }
+    
+   
     
     ReactDOM.render(<Main/>, document.getElementById('list'));
   </script>
