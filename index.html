@@ -34,19 +34,14 @@
     const Keys = Object.keys(Lists);
     console.log(Keys);
   
-   class Main extends React.Component{
-     render(){ 
-       return(
-       {Keys.map((e,index)=>
-         <option value={index}>
-           {e}</option>
-         ) 
-        }
-       )
-      }
-     }
-    
-   
+  const Main = () => (
+  <React.Fragment>
+    {Keys.map((e,index) => (
+      <option value={index}>{e}</option>
+     ))}
+  </React.Fragment>
+);
+  
     
     ReactDOM.render(<Main/>, document.getElementById('list'));
   </script>
