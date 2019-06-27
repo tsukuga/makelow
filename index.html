@@ -30,6 +30,12 @@
               number:["BC14908"],name:["-"],credit_min:6,credit_max:6,
               class1_min:6,class1_max:6,remove:"-",restriction:[["-"],["-"]],},
             ],
+         '国際総合学類/国際開発学/2017':[
+
+              {class1:"専門科目",class2:"-",class3:"必修科目",about:"卒業論文",
+              number:["BC14908"],name:["-"],credit_min:6,credit_max:6,
+              class1_min:6,class1_max:6,remove:"-",restriction:[["-"],["-"]],},
+            ],
       };
     const Keys = Object.keys(Lists);
     console.log(Keys);
@@ -39,7 +45,7 @@
      return(
       <React.Fragment>
       {Keys.map((e,index) => (
-        <MakeList value ={index} text ={e}/>
+        <MakeList value={index} text={e}/>
       ))}
       </React.Fragment>
      )
@@ -49,7 +55,9 @@
    class MakeList extends React.Component{
     render(){
      return(
+     <React.Fragment>
        <option value={this.props.value}>{this.props.text}</option>
+     </React.Fragment>
       )
     }
    }
